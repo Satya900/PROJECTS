@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rating App</title>
+</head>
+<body>
+<h1>RATING APP</h1>
+
+    <button id="1star">&#9733;</button>
+    <button id="2star">&#9733;&#9733;</button>
+    <button id="3Star">&#9733;&#9733;&#9733;</button>
+    <button id="4star">&#9733;&#9733;&#9733;&#9733;</button>
+    <button id="5Star">&#9733;&#9733;&#9733;&#9733;&#9733;</button>
+
+    <script>
+    function clearText() {
+        const existingText = document.querySelector(".ioi");
+        if (existingText) {
+            existingText.remove();
+        }
+    }
+
+    function oneStar() {
+        clearText();
+        const title = document.createElement("h1");
+        title.setAttribute("class","ioi");
+        title.textContent="Average";
+        console.log(title);
+        document.body.appendChild(title);
+    }
+
+    function twoStar() {
+        clearText();
+        const title = document.createElement("h1");
+        title.setAttribute("class","ioi");
+        title.textContent="Good";
+        console.log(title);
+        document.body.appendChild(title);  
+    }
+
+    function threeStar() {
+        clearText();
+        const title = document.createElement("h1");
+        title.setAttribute("class","ioi");
+        title.textContent="Very Good";
+        console.log(title);
+        document.body.appendChild(title);
+    }
+
+    function fourStar() {
+        clearText();
+        const title = document.createElement("h1");
+        title.setAttribute("class","ioi");
+        title.textContent="Excellent";
+        console.log(title);
+        document.body.appendChild(title);
+    }
+
+    function fiveStar() {
+        clearText();
+        const title = document.createElement("h1");
+        title.setAttribute("class","ioi");
+        title.textContent="Outstanding";
+        console.log(title);
+        document.body.appendChild(title);
+    }
+
+    document.getElementById("1star").addEventListener("click", oneStar);
+    document.getElementById("2star").addEventListener("click", twoStar);
+    document.getElementById("3Star").addEventListener("click", threeStar);
+    document.getElementById("4star").addEventListener("click", fourStar);
+    document.getElementById("5Star").addEventListener("click", fiveStar);
+    </script>
+</body>
+</html>
